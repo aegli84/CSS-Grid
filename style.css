@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(182, 142, 94);
+    height: 70vh;
+}
+
+section {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container {
+    width: 80vmin;
+    height: 80vmin;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(3, auto);
+    /*gap: 5px 10px;*/
+    /*box-shadow: 0 0 15px 5px #474747;*/
+}
+
+.grid-container > div {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container > div:nth-of-type(1) { /*header*/
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-container > div:nth-of-type(2) {  /*side menu */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 7;
+}
+
+.grid-container > div:nth-of-type(3) {  /*ad*/
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    
+}
+
+.grid-container > div:nth-of-type(4) { /*first box*/
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    width: 80%;
+}
+
+.grid-container > div:nth-of-type(5) {  /*second box*/
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    
+}
+
+.grid-container > div:nth-of-type(6) { /*third box bottom*/
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    
+}
+
+.grid-container > div:nth-of-type(7) { /* center box 1*/
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    
+}
+
+.grid-container > div:nth-of-type(8) { /* center box 2*/
+    grid-column-start: 5;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    
+}
+
+.grid-container > div:nth-of-type(9) { /* center box 3*/
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    
+}
+.grid-container > div:nth-of-type(10) { /* fourth box 3*/
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+
+#second-box-top > article {
+    height: 4vmin;
+    width: 4vmin;
+    border: 1px solid white;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
