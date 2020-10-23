@@ -15,9 +15,9 @@ section {
     height: 80vmin;
     display: grid;
     text-align: center;
-    grid-template-columns: repeat(8, auto);
-    grid-template-rows: repeat(3, auto);
-    /*gap: 5px 10px;*/
+    grid-template-columns: repeat(7, auto);
+    
+    gap: 5px 10px;
     /*box-shadow: 0 0 15px 5px #474747;*/
 }
 
@@ -38,15 +38,15 @@ section {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
-    grid-row-end: 7;
+    grid-row-end: 9;
 }
 
 .grid-container > div:nth-of-type(3) {  /*ad*/
     grid-column-start: 7;
     grid-column-end: 8;
     grid-row-start: 2;
-    grid-row-end: 7;
-    
+    grid-row-end: 9;
+
 }
 
 .grid-container > div:nth-of-type(4) { /*first box*/
@@ -54,7 +54,7 @@ section {
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 5;
-    width: 80%;
+    
 }
 
 .grid-container > div:nth-of-type(5) {  /*second box*/
@@ -69,47 +69,54 @@ section {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 5;
-    grid-row-end: 7;
+    grid-row-end: 8;
     
 }
+
+
+
 
 .grid-container > div:nth-of-type(7) { /* center box 1*/
-    grid-column-start: 4;
-    grid-column-end: 4;
-    grid-row-start: 5;
-    grid-row-end: 7;
-    
-}
-
-.grid-container > div:nth-of-type(8) { /* center box 2*/
     grid-column-start: 5;
     grid-column-end: 4;
     grid-row-start: 5;
     grid-row-end: 5;
-    
+}
+
+.grid-container > div:nth-of-type(8) { /* center box 2*/
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
 }
 
 .grid-container > div:nth-of-type(9) { /* center box 3*/
     grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 6;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 7;
     
 }
+
+
+
 .grid-container > div:nth-of-type(10) { /* fourth box 3*/
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 5;
-    grid-row-end: 7;
+    grid-row-end: 8;
 }
 
+#second-box-top {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    
+}
 
 #second-box-top > article {
-    height: 4vmin;
-    width: 4vmin;
     border: 1px solid white;
-    display: grid;
-    justify-content: space-around;
-    align-items: center;
-    box-sizing: border-box;
+    width: 7vmin;
+    height: 15vmin;
+    text-align: center;
 }
