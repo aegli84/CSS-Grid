@@ -18,7 +18,7 @@ section {
     display: grid;
     text-align: center;
     grid-template-columns: repeat(7, auto);
-    gap: 5px 10px;
+    gap: 5px;
     box-shadow: 0 0 15px 5px #1b1b1b;
     border-radius: 6px; 
 }
@@ -78,8 +78,6 @@ section {
 }
 
 
-
-
 .grid-container > div:nth-of-type(7) { /* center box 1*/
     grid-column-start: 5;
     grid-column-end: 4;
@@ -127,4 +125,87 @@ section {
     height: 15vmin;
     text-align: center;
     background-color: #F1DCA7;
+}
+
+
+/* Tablet view */
+
+@media only screen and (max-width: 1025px) {
+    section {
+        height: 100vh;
+        margin: 0;
+    }
+    .grid-container {
+        height: 100%;
+        width: 100%;
+        
+    }
+    .grid-container > div:nth-of-type(1) {
+        grid-column: 2 / span 5;
+    }
+
+    .grid-container > div:nth-of-type(2), .grid-container > div:nth-of-type(3) {
+        display: none;
+    }
+    .grid-container > div:nth-of-type(4){
+        grid-column: 2 / span 5;
+        grid-row: 2/ span 5;
+    }
+    
+    .grid-container > div:nth-of-type(5) {
+        grid-column: 2/ span 5;
+        grid-row: 7/ span 2;
+
+    }
+    .grid-container > div:nth-of-type(6) {
+        grid-row: 9/ span 3;
+    }
+
+    .grid-container > div:nth-of-type(7) {
+        grid-column: 4/ span 3;
+        grid-row: 9/ span 1;
+    }
+    .grid-container > div:nth-of-type(8) {
+        grid-column: 4/ span 3;
+        grid-row: 10/ span 1;
+    }
+    .grid-container > div:nth-of-type(9) {
+        grid-column: 4/ span 3;
+        grid-row: 11/ span 1;
+    }
+
+    .grid-container > div:nth-of-type(10) {
+        grid-column: 2/ span 5;
+        grid-row: 12/ span 5;
+    }
+
+    #second-box-top > article {
+        width: 30vmin;
+    }
+}
+
+/* Mobile view */
+
+@media only screen and (max-width: 480px) {
+    
+    .grid-container > div:nth-of-type(1),
+    .grid-container > div:nth-of-type(4),
+    .grid-container > div:nth-of-type(5),
+    .grid-container > div:nth-of-type(10){
+        grid-column: 1 / span 7;
+    }
+
+    .grid-container > div:nth-of-type(6) {
+        grid-column: 1/ span 3;
+    }
+
+
+    .grid-container > div:nth-of-type(7),
+    .grid-container > div:nth-of-type(8),
+    .grid-container > div:nth-of-type(9) {
+        grid-column: 4/ span 4;
+    }
+        
+    
+    
 }
